@@ -26,7 +26,7 @@ int main(){
     FILE *in;
     in = fopen("sv.txt", "r");
     if(in == NULL){
-        printf("Không tìm thấy tệp tin!\n");
+        printf("Khong tim thay tep tin!\n");
     }
     else{
         FILE *out;
