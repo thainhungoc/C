@@ -44,7 +44,7 @@ int main(){
         }
         fclose(in);
         fclose(out);
-        printf("Chuan hoa ten sinh vien va loai bo cac dau cach thua giua ten sinh vien trong file `sv.txt` thanh cong!\n");
+        printf("Chuan hoa ten sinh vien va loai bo cac dau cach thua giua ten sinh vien trong file `sv.txt` thanh cong\n");
     }
     return 0;
 }
