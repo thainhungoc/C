@@ -26,7 +26,7 @@ int main(){
     FILE *in;
     in = fopen("sv.txt", "r");
     if(in == NULL){
-        printf("Không tìm thấy tệp tin!\n");
+        printf("Khong tim thay tep tin!\n");
     }
     else{
         FILE *out;
@@ -44,58 +44,7 @@ int main(){
         }
         fclose(in);
         fclose(out);
-        printf("Chuan hoa ten sinh vien va loai bo cac dau cach thua giua ten sinh vien trong file `sv.txt` thanh cong!\n");
+        printf("Chuan hoa ten sinh vien va loai bo cac dau cach thua giua ten sinh vien trong file `sv.txt` thanh cong\n");
     }
     return 0;
 }
-//#include <stdio.h>
-//#include <stdlib.h>
-//#include <string.h>
-//#include <ctype.h>
-//
-//#define MAX_LEN 100
-//
-//int main() {
-//    FILE *fp_in, *fp_out;
-//    char line[MAX_LEN];
-//    char *token;
-//    int sv, i;
-//
-//    fp_in = fopen("sv.txt", "r");
-//    fp_out = fopen("svOut.txt", "w");
-//
-//    if (fp_in == NULL || fp_out == NULL) {
-//        printf("khong mo file duoc.\n");
-//        exit(1);
-//    }
-//
-//    // Read the number of students
-//    fgets(line, MAX_LEN, fp_in);
-//    sv = atoi(line);
-//
-//    // Write the number of students to the output file
-//    fprintf(fp_out, "%d\n", sv);
-//
-//    // Process each student name
-//    for (i = 0; i < sv; i++) {
-//        fgets(line, MAX_LEN, fp_in);
-//
-//        // Remove trailing newline character
-//        line[strcspn(line, "\n")] = 0;
-//
-//        // Tokenize the name and remove extra spaces
-//        token = strtok(line, " ");
-//        while (token != NULL) {
-//            fprintf(fp_out, "%c%s ", toupper(token[0]), token + 1);
-//            token = strtok(NULL, " ");
-//        }
-//        fprintf(fp_out, "\n");
-//    }
-//
-//    fclose(fp_in);
-//    fclose(fp_out);
-//
-//    printf("Xong!\n");
-//
-//    return 0;
-//}
